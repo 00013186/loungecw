@@ -1,0 +1,236 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 5300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.slides-fade {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 5%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.dreams{
+  display: flex;
+  justify-content: space-between;
+}
+.dream_img{
+  min-width: 66%;
+}
+.dream_link{
+  width: 100%;
+  height: 620px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.dream_link>img{
+  width: 100%;
+  position: absolute;
+  top: -35%;
+}
+.dreams_content{
+  padding: 30px 0 30px 30px;
+}
+.info_btn{
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.info_title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 1.8rem GothamPro;
+  color: #fff;
+  padding: 2px 35px;
+  text-align: center;
+  border-radius: 5px;
+  background: #26313a;
+  margin-right: 30px;
+  height: 70px;
+}
+.info_text{    
+  font: 2rem Gotham-Medium;
+  color: rgba(157,175,189,.5);
+  line-height: 2.2rem;
+}
+.dream_title>h4{
+  width: 100%;
+  font-size: 60px;
+  color: #9f72ff;
+  min-height: 58px;
+  font-weight: 900;
+  margin: 0;
+}
+.dream_title>p{
+  font-size: 23px;
+  color: #9dafbd;
+  line-height: normal;
+  font-weight: 900;
+}
+.dream_btn{
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  background: #9f72ff;
+  border-radius: 10px;
+  padding: 9px 20px;
+  font: 1.9rem Montserrat-Bold;
+  color: #fff;
+  border: 2px solid #9f72ff;
+}
+.blog_items{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blog_item{
+  margin-top: 30px;
+  max-width: 30%;
+}
+.bloginfo_img{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 360px;
+}
+.bloginfo_img>img{
+  width: 100%;
+}
+.blogitem_title{
+  width: 100%;
+  font-size: 30px;
+  color: #9f72ff;
+  min-height: 58px;
+  font-weight: 900;
+  margin: 0;
+  line-height: 35px;
+  margin-top: 30px;
+}
+.blogitem_text{
+  padding: 0;
+  margin: 0;
+  font-size: 23px;
+  color: #9dafbd;
+  line-height: normal;
+  font-weight: 900;
+  margin-top: 30px;
+}
+.blogitem_info{
+  font: 2rem Gotham-Medium;
+  color: rgba(157,175,189,.5);
+  line-height: 2.2rem;
+}
+.img_add{
+  width: 100%;
+}
+.menu_block{
+  margin-top: 30px;
+}
+.menu_title{
+  margin-bottom: 60px;
+  color: #fff;
+}
+.menu_content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.menu_item{
+  min-width: 31%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+}
+.menu_information{
+  padding: 20px 50px;
+}
+.menu_text,.menu_price{
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+}
+.menu_price{
+  margin-top: 48px;
+  font-weight: 700;
+}
